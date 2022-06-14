@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "asg2caption.py", line 14, in <module>
+    import controlimcap.readers.imgsgreader as imgsgreader
+  File "/home/xylu/PHVM/video_asg2cap/controlimcap/readers/imgsgreader.py", line 424
+    assert attn_mask = reg_masks
+                     ^
+SyntaxError: invalid syntax

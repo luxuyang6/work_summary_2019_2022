@@ -1,0 +1,278 @@
+/home/xylu/anaconda3/lib/python3.7/site-packages/torch/nn/modules/rnn.py:50: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.5 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+2021-04-14 19:38:48,749 embed: embedding.we.weight, shape=torch.Size([3747, 512]), num:1918464
+2021-04-14 19:38:48,749 embed: linear.weight, shape=torch.Size([512, 2048]), num:1048576
+2021-04-14 19:38:48,749 embed: linear.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,750 embed: graph_linear.weight, shape=torch.Size([512, 512]), num:262144
+2021-04-14 19:38:48,750 embed: graph_linear.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,750 video_enc: linear.weight, shape=torch.Size([512, 2048]), num:1048576
+2021-04-14 19:38:48,750 video_enc: rnn.weight_ih_l0, shape=torch.Size([2048, 512]), num:1048576
+2021-04-14 19:38:48,750 video_enc: rnn.weight_hh_l0, shape=torch.Size([2048, 512]), num:1048576
+2021-04-14 19:38:48,750 video_enc: rnn.bias_ih_l0, shape=torch.Size([2048]), num:2048
+2021-04-14 19:38:48,750 video_enc: rnn.bias_hh_l0, shape=torch.Size([2048]), num:2048
+2021-04-14 19:38:48,750 video_enc: rnn.weight_ih_l0_reverse, shape=torch.Size([2048, 512]), num:1048576
+2021-04-14 19:38:48,751 video_enc: rnn.weight_hh_l0_reverse, shape=torch.Size([2048, 512]), num:1048576
+2021-04-14 19:38:48,751 video_enc: rnn.bias_ih_l0_reverse, shape=torch.Size([2048]), num:2048
+2021-04-14 19:38:48,751 video_enc: rnn.bias_hh_l0_reverse, shape=torch.Size([2048]), num:2048
+2021-04-14 19:38:48,751 video_enc: video_linear.weight, shape=torch.Size([512, 1024]), num:524288
+2021-04-14 19:38:48,751 video_enc: video_linear.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,751 mp_encoder: ft_embed.weight, shape=torch.Size([512, 1536]), num:786432
+2021-04-14 19:38:48,751 mp_encoder: ft_embed.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,751 attn_encoder: attr_order_embeds, shape=torch.Size([20, 512]), num:10240
+2021-04-14 19:38:48,752 attn_encoder: first_embedding.0.weight, shape=torch.Size([512, 512]), num:262144
+2021-04-14 19:38:48,752 attn_encoder: first_embedding.0.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,752 attn_encoder: layers.0.loop_weight, shape=torch.Size([512, 512]), num:262144
+2021-04-14 19:38:48,752 attn_encoder: layers.0.weight, shape=torch.Size([6, 512, 512]), num:1572864
+2021-04-14 19:38:48,752 attn_encoder: layers.1.loop_weight, shape=torch.Size([512, 512]), num:262144
+2021-04-14 19:38:48,752 attn_encoder: layers.1.weight, shape=torch.Size([6, 512, 512]), num:1572864
+2021-04-14 19:38:48,752 attn_encoder: node_embedding.weight, shape=torch.Size([3, 512]), num:1536
+2021-04-14 19:38:48,753 decoder: embedding.we.weight, shape=torch.Size([3747, 512]), num:1918464
+2021-04-14 19:38:48,753 decoder: attn_lstm.weight_ih, shape=torch.Size([2048, 1536]), num:3145728
+2021-04-14 19:38:48,753 decoder: attn_lstm.weight_hh, shape=torch.Size([2048, 512]), num:1048576
+2021-04-14 19:38:48,753 decoder: attn_lstm.bias_ih, shape=torch.Size([2048]), num:2048
+2021-04-14 19:38:48,753 decoder: attn_lstm.bias_hh, shape=torch.Size([2048]), num:2048
+2021-04-14 19:38:48,753 decoder: lang_lstm.weight_ih, shape=torch.Size([2048, 1024]), num:2097152
+2021-04-14 19:38:48,753 decoder: lang_lstm.weight_hh, shape=torch.Size([2048, 512]), num:1048576
+2021-04-14 19:38:48,753 decoder: lang_lstm.bias_ih, shape=torch.Size([2048]), num:2048
+2021-04-14 19:38:48,753 decoder: lang_lstm.bias_hh, shape=torch.Size([2048]), num:2048
+2021-04-14 19:38:48,754 decoder: attn.linear_query.weight, shape=torch.Size([512, 512]), num:262144
+2021-04-14 19:38:48,754 decoder: attn.linear_query.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,754 decoder: attn.attn_w.weight, shape=torch.Size([1, 512]), num:512
+2021-04-14 19:38:48,754 decoder: vid_attn.linear_query.weight, shape=torch.Size([512, 512]), num:262144
+2021-04-14 19:38:48,754 decoder: vid_attn.linear_query.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,754 decoder: vid_attn.attn_w.weight, shape=torch.Size([1, 512]), num:512
+2021-04-14 19:38:48,754 decoder: attn_linear_context.weight, shape=torch.Size([512, 512]), num:262144
+2021-04-14 19:38:48,754 decoder: vid_attn_linear_context.weight, shape=torch.Size([512, 512]), num:262144
+2021-04-14 19:38:48,754 decoder: address_layer.0.weight, shape=torch.Size([512, 1024]), num:524288
+2021-04-14 19:38:48,755 decoder: address_layer.0.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,755 decoder: address_layer.2.weight, shape=torch.Size([3, 512]), num:1536
+2021-04-14 19:38:48,755 decoder: address_layer.2.bias, shape=torch.Size([3]), num:3
+2021-04-14 19:38:48,755 decoder: address_layer2.0.weight, shape=torch.Size([512, 1536]), num:786432
+2021-04-14 19:38:48,755 decoder: address_layer2.0.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,755 decoder: address_layer2.2.weight, shape=torch.Size([4, 512]), num:2048
+2021-04-14 19:38:48,755 decoder: address_layer2.2.bias, shape=torch.Size([4]), num:4
+2021-04-14 19:38:48,755 decoder: memory_update_layer.0.weight, shape=torch.Size([512, 1024]), num:524288
+2021-04-14 19:38:48,755 decoder: memory_update_layer.0.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,756 decoder: memory_update_layer.2.weight, shape=torch.Size([1024, 512]), num:524288
+2021-04-14 19:38:48,756 decoder: memory_update_layer.2.bias, shape=torch.Size([1024]), num:1024
+2021-04-14 19:38:48,756 decoder: sentinal_layer.0.weight, shape=torch.Size([512, 512]), num:262144
+2021-04-14 19:38:48,756 decoder: sentinal_layer.0.bias, shape=torch.Size([512]), num:512
+2021-04-14 19:38:48,756 decoder: sentinal_layer.2.weight, shape=torch.Size([1, 512]), num:512
+2021-04-14 19:38:48,756 decoder: sentinal_layer.2.bias, shape=torch.Size([1]), num:1
+2021-04-14 19:38:48,756 num params 59, num weights 26683400
+2021-04-14 19:38:48,757 trainable: num params 42, num weights 17667080
+2021-04-14 19:39:30,601 num_data 15064
+2021-04-14 19:40:05,207 num_data 1972
+2021-04-14 19:40:21,458 init val: loss 8.2284 bleu4 0.0000 cider 0.0001
+2021-04-14 19:40:28,463 	trn step 0 lr 0.00020000 loss: 8.2285
+2021-04-14 19:41:56,327 epoch (0/100) trn: loss 5.1619
+2021-04-14 19:42:11,437 epoch (0/100) val: loss 4.4606 bleu4 0.0000 cider 1.5412
+2021-04-14 19:43:45,901 epoch (1/100) trn: loss 4.5063
+2021-04-14 19:44:00,472 epoch (1/100) val: loss 4.3402 bleu4 0.0000 cider 2.4918
+2021-04-14 19:45:34,739 epoch (2/100) trn: loss 4.4121
+2021-04-14 19:45:49,443 epoch (2/100) val: loss 4.2865 bleu4 0.0002 cider 7.0374
+2021-04-14 19:47:24,418 epoch (3/100) trn: loss 4.3576
+2021-04-14 19:47:39,497 epoch (3/100) val: loss 4.2549 bleu4 0.0002 cider 6.9428
+2021-04-14 19:49:14,201 epoch (4/100) trn: loss 4.3162
+2021-04-14 19:49:29,138 epoch (4/100) val: loss 4.2293 bleu4 0.0002 cider 6.7228
+2021-04-14 19:51:02,809 epoch (5/100) trn: loss 4.2792
+2021-04-14 19:51:18,389 epoch (5/100) val: loss 4.2058 bleu4 1.4264 cider 7.2110
+2021-04-14 19:52:52,559 epoch (6/100) trn: loss 4.2428
+2021-04-14 19:53:07,276 epoch (6/100) val: loss 4.1774 bleu4 2.7348 cider 9.4018
+2021-04-14 19:54:42,085 epoch (7/100) trn: loss 4.1944
+2021-04-14 19:54:56,859 epoch (7/100) val: loss 4.0871 bleu4 3.2748 cider 11.0027
+2021-04-14 19:55:44,829 	trn step 1000 lr 0.00020000 loss: 4.0725
+2021-04-14 19:56:29,726 epoch (8/100) trn: loss 4.0062
+2021-04-14 19:56:44,495 epoch (8/100) val: loss 3.8075 bleu4 3.4511 cider 12.6625
+2021-04-14 19:58:17,680 epoch (9/100) trn: loss 3.7467
+2021-04-14 19:58:32,480 epoch (9/100) val: loss 3.5986 bleu4 4.9107 cider 19.2398
+2021-04-14 20:00:05,537 epoch (10/100) trn: loss 3.5738
+2021-04-14 20:00:20,703 epoch (10/100) val: loss 3.4672 bleu4 5.3763 cider 18.8755
+2021-04-14 20:01:54,834 epoch (11/100) trn: loss 3.4591
+2021-04-14 20:02:10,001 epoch (11/100) val: loss 3.3653 bleu4 5.7775 cider 21.4476
+2021-04-14 20:03:45,050 epoch (12/100) trn: loss 3.3630
+2021-04-14 20:04:00,048 epoch (12/100) val: loss 3.2810 bleu4 5.6036 cider 24.1412
+2021-04-14 20:05:35,538 epoch (13/100) trn: loss 3.2605
+2021-04-14 20:05:50,989 epoch (13/100) val: loss 3.1689 bleu4 6.6793 cider 29.1228
+2021-04-14 20:07:25,614 epoch (14/100) trn: loss 3.1504
+2021-04-14 20:07:40,682 epoch (14/100) val: loss 3.0674 bleu4 6.9188 cider 27.1069
+2021-04-14 20:09:14,859 epoch (15/100) trn: loss 3.0609
+2021-04-14 20:09:30,812 epoch (15/100) val: loss 3.0011 bleu4 6.5816 cider 30.5890
+2021-04-14 20:11:01,153 	trn step 2000 lr 0.00020000 loss: 3.0129
+2021-04-14 20:11:05,437 epoch (16/100) trn: loss 2.9919
+2021-04-14 20:11:20,689 epoch (16/100) val: loss 2.9434 bleu4 5.7105 cider 26.8540
+2021-04-14 20:12:54,717 epoch (17/100) trn: loss 2.9293
+2021-04-14 20:13:09,854 epoch (17/100) val: loss 2.8836 bleu4 7.9635 cider 37.8954
+2021-04-14 20:14:43,559 epoch (18/100) trn: loss 2.8702
+2021-04-14 20:14:58,959 epoch (18/100) val: loss 2.8365 bleu4 8.6759 cider 43.2974
+2021-04-14 20:16:33,131 epoch (19/100) trn: loss 2.8153
+2021-04-14 20:16:48,562 epoch (19/100) val: loss 2.7775 bleu4 7.0572 cider 38.7072
+2021-04-14 20:18:22,027 epoch (20/100) trn: loss 2.7606
+2021-04-14 20:18:37,302 epoch (20/100) val: loss 2.7442 bleu4 7.9045 cider 42.6344
+2021-04-14 20:20:12,085 epoch (21/100) trn: loss 2.7125
+2021-04-14 20:20:27,540 epoch (21/100) val: loss 2.6886 bleu4 10.0501 cider 50.4045
+2021-04-14 20:22:03,043 epoch (22/100) trn: loss 2.6638
+2021-04-14 20:22:18,551 epoch (22/100) val: loss 2.6472 bleu4 10.8097 cider 53.9215
+2021-04-14 20:23:53,795 epoch (23/100) trn: loss 2.6123
+2021-04-14 20:24:09,130 epoch (23/100) val: loss 2.6045 bleu4 10.6596 cider 59.5885
+2021-04-14 20:25:45,388 epoch (24/100) trn: loss 2.5703
+2021-04-14 20:26:00,840 epoch (24/100) val: loss 2.5665 bleu4 11.2944 cider 61.5740
+2021-04-14 20:26:45,816 	trn step 3000 lr 0.00020000 loss: 2.5321
+2021-04-14 20:27:35,843 epoch (25/100) trn: loss 2.5291
+2021-04-14 20:27:51,137 epoch (25/100) val: loss 2.5323 bleu4 11.8798 cider 66.4565
+2021-04-14 20:29:25,300 epoch (26/100) trn: loss 2.4893
+2021-04-14 20:29:40,707 epoch (26/100) val: loss 2.5070 bleu4 12.0524 cider 71.9460
+2021-04-14 20:31:14,683 epoch (27/100) trn: loss 2.4513
+2021-04-14 20:31:30,248 epoch (27/100) val: loss 2.4654 bleu4 12.7586 cider 73.2353
+2021-04-14 20:33:05,432 epoch (28/100) trn: loss 2.4170
+2021-04-14 20:33:20,730 epoch (28/100) val: loss 2.4385 bleu4 13.3218 cider 79.3614
+2021-04-14 20:34:56,958 epoch (29/100) trn: loss 2.3807
+2021-04-14 20:35:12,218 epoch (29/100) val: loss 2.4096 bleu4 13.6197 cider 80.4275
+2021-04-14 20:36:48,432 epoch (30/100) trn: loss 2.3497
+2021-04-14 20:37:03,800 epoch (30/100) val: loss 2.3833 bleu4 14.1558 cider 86.5489
+2021-04-14 20:38:38,867 epoch (31/100) trn: loss 2.3192
+2021-04-14 20:38:54,251 epoch (31/100) val: loss 2.3601 bleu4 13.8781 cider 89.7086
+2021-04-14 20:40:29,931 epoch (32/100) trn: loss 2.2904
+2021-04-14 20:40:45,176 epoch (32/100) val: loss 2.3373 bleu4 14.7342 cider 91.0434
+2021-04-14 20:42:13,148 	trn step 4000 lr 0.00020000 loss: 2.1918
+2021-04-14 20:42:21,041 epoch (33/100) trn: loss 2.2615
+2021-04-14 20:42:36,499 epoch (33/100) val: loss 2.3170 bleu4 14.8499 cider 90.8000
+2021-04-14 20:44:12,112 epoch (34/100) trn: loss 2.2379
+2021-04-14 20:44:27,813 epoch (34/100) val: loss 2.3132 bleu4 15.0571 cider 93.0386
+2021-04-14 20:46:03,808 epoch (35/100) trn: loss 2.2143
+2021-04-14 20:46:19,120 epoch (35/100) val: loss 2.2911 bleu4 14.7764 cider 96.4719
+2021-04-14 20:47:54,919 epoch (36/100) trn: loss 2.1905
+2021-04-14 20:48:10,298 epoch (36/100) val: loss 2.2675 bleu4 15.4804 cider 98.7768
+2021-04-14 20:49:46,518 epoch (37/100) trn: loss 2.1669
+2021-04-14 20:50:02,093 epoch (37/100) val: loss 2.2599 bleu4 15.3047 cider 103.0109
+2021-04-14 20:51:35,719 epoch (38/100) trn: loss 2.1447
+2021-04-14 20:51:51,004 epoch (38/100) val: loss 2.2380 bleu4 15.4383 cider 102.5366
+2021-04-14 20:53:26,594 epoch (39/100) trn: loss 2.1229
+2021-04-14 20:53:41,852 epoch (39/100) val: loss 2.2391 bleu4 15.4879 cider 106.3002
+2021-04-14 20:55:15,196 epoch (40/100) trn: loss 2.1050
+2021-04-14 20:55:30,344 epoch (40/100) val: loss 2.2225 bleu4 15.7067 cider 105.8189
+2021-04-14 20:57:04,747 epoch (41/100) trn: loss 2.0866
+2021-04-14 20:57:19,995 epoch (41/100) val: loss 2.2128 bleu4 16.3883 cider 104.8560
+2021-04-14 20:57:59,795 	trn step 5000 lr 0.00020000 loss: 2.1333
+2021-04-14 20:58:55,417 epoch (42/100) trn: loss 2.0628
+2021-04-14 20:59:10,697 epoch (42/100) val: loss 2.1988 bleu4 16.7220 cider 103.6620
+2021-04-14 21:00:46,637 epoch (43/100) trn: loss 2.0486
+2021-04-14 21:01:02,207 epoch (43/100) val: loss 2.1987 bleu4 16.5115 cider 111.5749
+2021-04-14 21:02:37,474 epoch (44/100) trn: loss 2.0304
+2021-04-14 21:02:53,111 epoch (44/100) val: loss 2.1832 bleu4 16.0676 cider 110.0850
+2021-04-14 21:04:28,159 epoch (45/100) trn: loss 2.0124
+2021-04-14 21:04:43,409 epoch (45/100) val: loss 2.1769 bleu4 16.1181 cider 114.4501
+2021-04-14 21:06:18,631 epoch (46/100) trn: loss 1.9956
+2021-04-14 21:06:34,137 epoch (46/100) val: loss 2.1706 bleu4 16.6227 cider 110.5471
+2021-04-14 21:08:08,801 epoch (47/100) trn: loss 1.9782
+2021-04-14 21:08:23,930 epoch (47/100) val: loss 2.1448 bleu4 16.3625 cider 111.9935
+2021-04-14 21:09:58,968 epoch (48/100) trn: loss 1.9604
+2021-04-14 21:10:14,492 epoch (48/100) val: loss 2.1497 bleu4 16.9556 cider 112.9842
+2021-04-14 21:11:49,461 epoch (49/100) trn: loss 1.9470
+2021-04-14 21:12:04,676 epoch (49/100) val: loss 2.1503 bleu4 16.9109 cider 115.7212
+2021-04-14 21:13:31,370 	trn step 6000 lr 0.00020000 loss: 1.8071
+2021-04-14 21:13:45,453 epoch (50/100) trn: loss 1.9313
+2021-04-14 21:14:03,147 epoch (50/100) val: loss 2.1482 bleu4 16.5946 cider 116.9403
+2021-04-14 21:15:46,849 epoch (51/100) trn: loss 1.9151
+2021-04-14 21:16:04,765 epoch (51/100) val: loss 2.1437 bleu4 16.8090 cider 116.5066
+2021-04-14 21:17:48,349 epoch (52/100) trn: loss 1.8995
+2021-04-14 21:18:05,874 epoch (52/100) val: loss 2.1332 bleu4 17.2930 cider 115.1611
+2021-04-14 21:19:49,354 epoch (53/100) trn: loss 1.8853
+2021-04-14 21:20:07,471 epoch (53/100) val: loss 2.1256 bleu4 16.7781 cider 117.4723
+2021-04-14 21:21:50,646 epoch (54/100) trn: loss 1.8728
+2021-04-14 21:22:08,060 epoch (54/100) val: loss 2.1215 bleu4 17.1210 cider 122.2352
+2021-04-14 21:23:51,177 epoch (55/100) trn: loss 1.8576
+2021-04-14 21:24:09,539 epoch (55/100) val: loss 2.1213 bleu4 17.3123 cider 119.1299
+2021-04-14 21:25:53,626 epoch (56/100) trn: loss 1.8431
+2021-04-14 21:26:11,431 epoch (56/100) val: loss 2.1213 bleu4 16.7715 cider 118.5641
+2021-04-14 21:27:54,257 epoch (57/100) trn: loss 1.8269
+2021-04-14 21:28:11,406 epoch (57/100) val: loss 2.1121 bleu4 17.3769 cider 122.5413
+2021-04-14 21:29:55,242 epoch (58/100) trn: loss 1.8138
+2021-04-14 21:30:11,813 epoch (58/100) val: loss 2.1003 bleu4 17.1638 cider 122.0309
+2021-04-14 21:30:46,045 	trn step 7000 lr 0.00020000 loss: 1.9045
+2021-04-14 21:31:46,199 epoch (59/100) trn: loss 1.7986
+2021-04-14 21:32:02,154 epoch (59/100) val: loss 2.1088 bleu4 17.5668 cider 122.8068
+2021-04-14 21:33:36,521 epoch (60/100) trn: loss 1.7834
+2021-04-14 21:33:51,575 epoch (60/100) val: loss 2.1148 bleu4 17.3673 cider 117.7383
+2021-04-14 21:35:25,937 epoch (61/100) trn: loss 1.7706
+2021-04-14 21:35:41,070 epoch (61/100) val: loss 2.1070 bleu4 17.8871 cider 119.2647
+2021-04-14 21:37:14,324 epoch (62/100) trn: loss 1.7571
+2021-04-14 21:37:29,601 epoch (62/100) val: loss 2.1071 bleu4 17.5537 cider 120.8702
+2021-04-14 21:39:02,736 epoch (63/100) trn: loss 1.7454
+2021-04-14 21:39:17,678 epoch (63/100) val: loss 2.1003 bleu4 17.4374 cider 122.2691
+2021-04-14 21:40:52,056 epoch (64/100) trn: loss 1.7337
+2021-04-14 21:41:07,282 epoch (64/100) val: loss 2.1090 bleu4 17.4073 cider 122.8799
+2021-04-14 21:42:40,602 epoch (65/100) trn: loss 1.7185
+2021-04-14 21:42:55,737 epoch (65/100) val: loss 2.1179 bleu4 17.5947 cider 122.1827
+2021-04-14 21:44:29,176 epoch (66/100) trn: loss 1.7062
+2021-04-14 21:44:44,199 epoch (66/100) val: loss 2.0954 bleu4 17.5004 cider 121.7133
+2021-04-14 21:46:01,527 	trn step 8000 lr 0.00020000 loss: 1.7017
+2021-04-14 21:46:18,985 epoch (67/100) trn: loss 1.6939
+2021-04-14 21:46:35,582 epoch (67/100) val: loss 2.1094 bleu4 17.6135 cider 120.0895
+2021-04-14 21:48:14,887 epoch (68/100) trn: loss 1.6802
+2021-04-14 21:48:31,463 epoch (68/100) val: loss 2.1010 bleu4 17.7407 cider 120.8326
+2021-04-14 21:50:11,468 epoch (69/100) trn: loss 1.6694
+2021-04-14 21:50:28,443 epoch (69/100) val: loss 2.1129 bleu4 17.9345 cider 118.7231
+2021-04-14 21:52:10,429 epoch (70/100) trn: loss 1.6546
+2021-04-14 21:52:27,829 epoch (70/100) val: loss 2.1014 bleu4 17.3638 cider 122.9332
+2021-04-14 21:54:11,583 epoch (71/100) trn: loss 1.6417
+2021-04-14 21:54:30,061 epoch (71/100) val: loss 2.1115 bleu4 17.7253 cider 115.9491
+2021-04-14 21:56:15,986 epoch (72/100) trn: loss 1.6296
+2021-04-14 21:56:34,508 epoch (72/100) val: loss 2.1047 bleu4 17.3390 cider 121.1119
+2021-04-14 21:58:20,540 epoch (73/100) trn: loss 1.6166
+2021-04-14 21:58:38,533 epoch (73/100) val: loss 2.1140 bleu4 17.6331 cider 124.7475
+2021-04-14 22:00:24,442 epoch (74/100) trn: loss 1.6040
+2021-04-14 22:00:42,045 epoch (74/100) val: loss 2.1073 bleu4 17.4974 cider 124.5850
+2021-04-14 22:02:27,912 epoch (75/100) trn: loss 1.5921
+2021-04-14 22:02:46,577 epoch (75/100) val: loss 2.1120 bleu4 17.5429 cider 122.5609
+2021-04-14 22:03:19,670 	trn step 9000 lr 0.00020000 loss: 1.5172
+2021-04-14 22:04:32,877 epoch (76/100) trn: loss 1.5786
+2021-04-14 22:04:50,323 epoch (76/100) val: loss 2.1194 bleu4 18.1494 cider 123.2825
+2021-04-14 22:06:35,182 epoch (77/100) trn: loss 1.5673
+2021-04-14 22:06:53,909 epoch (77/100) val: loss 2.1231 bleu4 17.3353 cider 122.9019
+2021-04-14 22:08:41,925 epoch (78/100) trn: loss 1.5574
+2021-04-14 22:09:00,448 epoch (78/100) val: loss 2.1291 bleu4 17.5518 cider 124.3027
+2021-04-14 22:10:45,602 epoch (79/100) trn: loss 1.5461
+2021-04-14 22:11:03,478 epoch (79/100) val: loss 2.1286 bleu4 17.7410 cider 125.4436
+2021-04-14 22:12:50,301 epoch (80/100) trn: loss 1.5322
+2021-04-14 22:13:09,115 epoch (80/100) val: loss 2.1360 bleu4 18.0364 cider 122.0269
+2021-04-14 22:14:55,474 epoch (81/100) trn: loss 1.5208
+2021-04-14 22:15:13,547 epoch (81/100) val: loss 2.1242 bleu4 17.5783 cider 122.3274
+2021-04-14 22:16:58,849 epoch (82/100) trn: loss 1.5086
+2021-04-14 22:17:17,468 epoch (82/100) val: loss 2.1461 bleu4 17.9999 cider 121.8374
+2021-04-14 22:19:03,578 epoch (83/100) trn: loss 1.4959
+2021-04-14 22:19:21,958 epoch (83/100) val: loss 2.1420 bleu4 17.6196 cider 119.6859
+2021-04-14 22:20:42,582 	trn step 10000 lr 0.00020000 loss: 1.4769
+2021-04-14 22:21:06,883 epoch (84/100) trn: loss 1.4867
+2021-04-14 22:21:24,594 epoch (84/100) val: loss 2.1316 bleu4 17.7793 cider 126.3854
+2021-04-14 22:23:10,902 epoch (85/100) trn: loss 1.4740
+2021-04-14 22:23:29,440 epoch (85/100) val: loss 2.1328 bleu4 17.6967 cider 126.3853
+2021-04-14 22:25:15,456 epoch (86/100) trn: loss 1.4624
+2021-04-14 22:25:34,325 epoch (86/100) val: loss 2.1566 bleu4 17.8324 cider 120.9542
+2021-04-14 22:27:21,132 epoch (87/100) trn: loss 1.4510
+2021-04-14 22:27:38,999 epoch (87/100) val: loss 2.1594 bleu4 17.9597 cider 121.6088
+2021-04-14 22:29:29,372 epoch (88/100) trn: loss 1.4401
+2021-04-14 22:29:49,557 epoch (88/100) val: loss 2.1654 bleu4 17.5797 cider 123.3244
+2021-04-14 22:31:38,630 epoch (89/100) trn: loss 1.4303
+2021-04-14 22:31:59,387 epoch (89/100) val: loss 2.1581 bleu4 17.5425 cider 121.9614
+2021-04-14 22:33:52,265 epoch (90/100) trn: loss 1.4209
+2021-04-14 22:34:13,074 epoch (90/100) val: loss 2.1704 bleu4 17.6057 cider 123.9521
+2021-04-14 22:36:06,184 epoch (91/100) trn: loss 1.4076
+2021-04-14 22:36:26,403 epoch (91/100) val: loss 2.1802 bleu4 18.0579 cider 123.3484
+2021-04-14 22:38:19,823 epoch (92/100) trn: loss 1.3975
+2021-04-14 22:38:39,911 epoch (92/100) val: loss 2.1899 bleu4 17.6185 cider 123.8517
+2021-04-14 22:39:11,432 	trn step 11000 lr 0.00020000 loss: 1.3935
+2021-04-14 22:40:32,687 epoch (93/100) trn: loss 1.3822
+2021-04-14 22:40:53,327 epoch (93/100) val: loss 2.1921 bleu4 17.7494 cider 123.6958
+2021-04-14 22:42:45,855 epoch (94/100) trn: loss 1.3762
+2021-04-14 22:43:06,117 epoch (94/100) val: loss 2.1833 bleu4 17.8822 cider 124.2296
+2021-04-14 22:44:58,419 epoch (95/100) trn: loss 1.3640
+2021-04-14 22:45:18,397 epoch (95/100) val: loss 2.2041 bleu4 17.7071 cider 123.4162
+2021-04-14 22:47:12,159 epoch (96/100) trn: loss 1.3539
+2021-04-14 22:47:30,151 epoch (96/100) val: loss 2.1952 bleu4 17.6080 cider 125.1560
+2021-04-14 22:49:15,954 epoch (97/100) trn: loss 1.3454
+2021-04-14 22:49:34,393 epoch (97/100) val: loss 2.2085 bleu4 17.9052 cider 119.7264
+2021-04-14 22:51:22,267 epoch (98/100) trn: loss 1.3323
+2021-04-14 22:51:43,425 epoch (98/100) val: loss 2.2111 bleu4 17.7473 cider 117.3978
+2021-04-14 22:53:36,476 epoch (99/100) trn: loss 1.3205
+2021-04-14 22:53:56,653 epoch (99/100) val: loss 2.2309 bleu4 17.7821 cider 128.1851

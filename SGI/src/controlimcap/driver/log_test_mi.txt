@@ -1,0 +1,76 @@
+Parsing reference captions
+Parsing test captions
+SPICE evaluation took: 6.128 s
+Parsing reference captions
+Parsing test captions
+SPICE evaluation took: 5.758 s
+Parsing reference captions
+Parsing test captions
+SPICE evaluation took: 6.379 s
+/home/xylu/anaconda3/lib/python3.7/site-packages/torch/nn/modules/rnn.py:50: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.5 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+embed: embedding.we.weight, shape=torch.Size([3747, 512]), num:1918464
+embed: linear.weight, shape=torch.Size([512, 2048]), num:1048576
+embed: linear.bias, shape=torch.Size([512]), num:512
+embed: graph_linear.weight, shape=torch.Size([512, 512]), num:262144
+embed: graph_linear.bias, shape=torch.Size([512]), num:512
+video_enc: linear.weight, shape=torch.Size([512, 2048]), num:1048576
+video_enc: rnn.weight_ih_l0, shape=torch.Size([2048, 512]), num:1048576
+video_enc: rnn.weight_hh_l0, shape=torch.Size([2048, 512]), num:1048576
+video_enc: rnn.bias_ih_l0, shape=torch.Size([2048]), num:2048
+video_enc: rnn.bias_hh_l0, shape=torch.Size([2048]), num:2048
+video_enc: rnn.weight_ih_l0_reverse, shape=torch.Size([2048, 512]), num:1048576
+video_enc: rnn.weight_hh_l0_reverse, shape=torch.Size([2048, 512]), num:1048576
+video_enc: rnn.bias_ih_l0_reverse, shape=torch.Size([2048]), num:2048
+video_enc: rnn.bias_hh_l0_reverse, shape=torch.Size([2048]), num:2048
+video_enc: video_linear.weight, shape=torch.Size([512, 1024]), num:524288
+video_enc: video_linear.bias, shape=torch.Size([512]), num:512
+mp_encoder: ft_embed.weight, shape=torch.Size([512, 1536]), num:786432
+mp_encoder: ft_embed.bias, shape=torch.Size([512]), num:512
+attn_encoder: attr_order_embeds, shape=torch.Size([20, 512]), num:10240
+attn_encoder: first_embedding.0.weight, shape=torch.Size([512, 512]), num:262144
+attn_encoder: first_embedding.0.bias, shape=torch.Size([512]), num:512
+attn_encoder: layers.0.loop_weight, shape=torch.Size([512, 512]), num:262144
+attn_encoder: layers.0.weight, shape=torch.Size([6, 512, 512]), num:1572864
+attn_encoder: layers.1.loop_weight, shape=torch.Size([512, 512]), num:262144
+attn_encoder: layers.1.weight, shape=torch.Size([6, 512, 512]), num:1572864
+attn_encoder: node_embedding.weight, shape=torch.Size([3, 512]), num:1536
+decoder: embedding.we.weight, shape=torch.Size([3747, 512]), num:1918464
+decoder: attn_lstm.weight_ih, shape=torch.Size([2048, 1536]), num:3145728
+decoder: attn_lstm.weight_hh, shape=torch.Size([2048, 512]), num:1048576
+decoder: attn_lstm.bias_ih, shape=torch.Size([2048]), num:2048
+decoder: attn_lstm.bias_hh, shape=torch.Size([2048]), num:2048
+decoder: lang_lstm.weight_ih, shape=torch.Size([2048, 1024]), num:2097152
+decoder: lang_lstm.weight_hh, shape=torch.Size([2048, 512]), num:1048576
+decoder: lang_lstm.bias_ih, shape=torch.Size([2048]), num:2048
+decoder: lang_lstm.bias_hh, shape=torch.Size([2048]), num:2048
+decoder: attn.linear_query.weight, shape=torch.Size([512, 512]), num:262144
+decoder: attn.linear_query.bias, shape=torch.Size([512]), num:512
+decoder: attn.attn_w.weight, shape=torch.Size([1, 512]), num:512
+decoder: vid_attn.linear_query.weight, shape=torch.Size([512, 512]), num:262144
+decoder: vid_attn.linear_query.bias, shape=torch.Size([512]), num:512
+decoder: vid_attn.attn_w.weight, shape=torch.Size([1, 512]), num:512
+decoder: attn_linear_context.weight, shape=torch.Size([512, 512]), num:262144
+decoder: vid_attn_linear_context.weight, shape=torch.Size([512, 512]), num:262144
+decoder: address_layer.0.weight, shape=torch.Size([512, 1024]), num:524288
+decoder: address_layer.0.bias, shape=torch.Size([512]), num:512
+decoder: address_layer.2.weight, shape=torch.Size([3, 512]), num:1536
+decoder: address_layer.2.bias, shape=torch.Size([3]), num:3
+decoder: address_layer2.0.weight, shape=torch.Size([512, 1536]), num:786432
+decoder: address_layer2.0.bias, shape=torch.Size([512]), num:512
+decoder: address_layer2.2.weight, shape=torch.Size([4, 512]), num:2048
+decoder: address_layer2.2.bias, shape=torch.Size([4]), num:4
+decoder: memory_update_layer.0.weight, shape=torch.Size([512, 1024]), num:524288
+decoder: memory_update_layer.0.bias, shape=torch.Size([512]), num:512
+decoder: memory_update_layer.2.weight, shape=torch.Size([1024, 512]), num:524288
+decoder: memory_update_layer.2.bias, shape=torch.Size([1024]), num:1024
+decoder: sentinal_layer.0.weight, shape=torch.Size([512, 512]), num:262144
+decoder: sentinal_layer.0.bias, shape=torch.Size([512]), num:512
+decoder: sentinal_layer.2.weight, shape=torch.Size([1, 512]), num:512
+decoder: sentinal_layer.2.bias, shape=torch.Size([1]), num:1
+num params 59, num weights 26683400
+trainable: num params 42, num weights 17667080
+num_data 6811
+loss,epoch.66.th,291.00,25.10,23.27,51.98,38.33,21.78,12.92
+bleu4,epoch.76.th,324.00,24.56,23.62,51.97,38.64,22.28,13.66
+cider,epoch.99.th,404.00,24.38,23.42,51.52,38.98,21.95,13.25
