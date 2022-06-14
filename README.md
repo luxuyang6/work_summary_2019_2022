@@ -32,7 +32,7 @@ python main.py $resdir/model.json $resdir/path.json $mtype --eval_set tst --num_
 ## 基于场景图引导与交互的视频描述生成（SGI）
 
 ### 工作介绍
-![image](https://github.com/luxuyang6/work_summary_2019_2022/blob/master/figure-model.jpg)
+![image](https://github.com/luxuyang6/work_summary_2019_2022/blob/master/SGI.jpg)
 
 ### Training & Inference
 Python 3 and PyTorch 1.4.
