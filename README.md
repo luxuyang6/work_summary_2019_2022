@@ -3,17 +3,36 @@
 ## 基于变分网络与关键词的视频描述生成（Video_PHVM）
 
 ### 工作介绍
-![image]("./figure-model.jpg")
+![image](https://github.com/luxuyang6/work_summary_2019_2022/blob/master/Video_PHVM.png)
 
 ### Training & Inference
 Python 3 and PyTorch 1.4.
+```
+cd Video_PHVM
+export PYTHONPATH=$(pwd):${PYTHONPATH}
+cd src/
+export PYTHONPATH=$(pwd):${PYTHONPATH}
+
+cd controlimcap/driver
+mtype=rgcn.flow.memory 
+
+# config
+python configs/prepare_charades_config.py $mtype # the config file can be changed
+resdir='' # copy the output string of the previous step
+
+# training
+python main.py $resdir/model.json $resdir/path.json $mtype --eval_loss --is_train --num_workers 8
+
+# inference
+python main.py $resdir/model.json $resdir/path.json $mtype --eval_set tst --num_workers 8
+```
 
 
 
 ## 基于场景图引导与交互的视频描述生成（SGI）
 
 ### 工作介绍
-![image]("./figure-model.jpg")
+![image](https://github.com/luxuyang6/work_summary_2019_2022/blob/master/figure-model.jpg)
 
 ### Training & Inference
 Python 3 and PyTorch 1.4.
