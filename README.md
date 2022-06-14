@@ -4,7 +4,9 @@
 
 ### 工作介绍
 
-Video-PHVM方法首先从视频中提取出作为关键词作为文本生成的plan，之后将关键词plan用于视频描述生成，具体的模型结构如图所示。
+Video-PHVM方法首先从视频中提取出包含视频中实体、动作等信息的关键词组合，之后将不同的关键词组合用于视频描述生成，具体的模型结构如图所示。
+
+该方法使用LSTM对视频与文本进行编码，为了生成更加多样与可控的视频描述，使用变分网络对输入的关键词组合进行融合处理，得到关键词级别的变分向量，之后使用分层文本生成的方法，使用句子级别变分向量逐句生成内容丰富的视频描述。
 
 该方法基于[Long and Diverse Text Generation with Planning-based Hierarchical Variational Model](https://arxiv.org/abs/1908.06605)中PHVM模型进行实现。
 ![image](https://github.com/luxuyang6/work_summary_2019_2022/blob/master/Video_PHVM.png)
