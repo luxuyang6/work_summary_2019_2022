@@ -1,2 +1,0 @@
-<html><head><script language=javascript>location='http://10.0.0.55/index_1.html?url='+document.location;</script></head></html>
-
