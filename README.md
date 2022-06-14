@@ -11,8 +11,8 @@ Video-PHVM方法首先从视频中提取出包含视频中实体、动作等信�
 该方法基于[Long and Diverse Text Generation with Planning-based Hierarchical Variational Model](https://arxiv.org/abs/1908.06605)中PHVM模型进行实现。
 ![image](https://github.com/luxuyang6/work_summary_2019_2022/blob/master/Video_PHVM.png)
 
-### Training & Inference
-Python 3 and PyTorch 1.4.
+### 代码实现
+详见Video_PHVM目录，基于Python 3 and PyTorch 1.4实现。
 ```
 cd Video_PHVM/src
 
@@ -46,8 +46,10 @@ SGI是一种基于场景图引导与交互的视频描述方法。其中，场�
 模型结构如图所示：
 ![image](https://github.com/luxuyang6/work_summary_2019_2022/blob/master/SGI.jpg)
 
-### Training & Inference
-Python 3 and PyTorch 1.4.
+### 代码实现
+详见SGI目录，基于Python 3 and PyTorch 1.4实现。
+
+准确场景图生成模块由多个分类器组成，实现代码在SGI目录中给出。
 ```
 cd SGI/
 export PYTHONPATH=$(pwd):${PYTHONPATH}
